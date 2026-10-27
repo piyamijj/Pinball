@@ -1,0 +1,18 @@
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;user-select:none;touch-action:none}
+html,body{margin:0;height:100%;background:#050308;overflow:hidden;font-family:Georgia,serif;color:#e8d9b0}
+#c{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#0a0710}
+button{font-family:inherit;background:#3a1626;color:#e8d9b0;border:1px solid #b08d3c;border-radius:6px;padding:8px 14px;font-size:14px}
+#pauseBtn{position:fixed;top:8px;right:8px;z-index:5;padding:6px 10px}
+#fireBtn{position:fixed;right:10px;bottom:14px;z-index:5;padding:14px 12px;background:#5a1a2a;opacity:.85}
+#toast{position:fixed;left:50%;top:14%;transform:translateX(-50%);z-index:8;text-align:center;font-weight:bold;letter-spacing:2px;color:#ffd86b;text-shadow:0 0 12px #c0392b;font-size:clamp(14px,3.4vmin,26px);opacity:0;transition:opacity .4s;pointer-events:none;white-space:pre-line}
+#toast.on{opacity:1}
+.ov{position:fixed;inset:0;z-index:10;background:rgba(5,3,8,.88);display:flex;align-items:center;justify-content:center}
+.hide{display:none}
+.card{text-align:center;padding:20px;max-width:92vw}
+h1{font-size:clamp(28px,8vmin,56px);margin:0;color:#d4af4a;letter-spacing:4px;text-shadow:0 0 20px #7a1230}
+h2{color:#d4af4a;font-size:32px}
+.sub{margin:4px 0 22px;color:#9a7fa8;letter-spacing:6px}
+.big{font-size:22px;padding:12px 40px;background:#7a1230}
+.cpn{margin:18px 0 6px;display:flex;gap:6px;justify-content:center}
+.cpn input{background:#150d1c;color:#e8d9b0;border:1px solid #b08d3c;border-radius:6px;padding:8px;font-size:15px;width:170px;text-transform:uppercase;user-select:text;touch-action:auto}
+.msg{min-height:20px;font-size:13px;color:#ffd86b}.help{font-size:12px;color:#8a7a95;line-height:1.6}

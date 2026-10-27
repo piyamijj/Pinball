@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#0a0710"><title>Gotik Konak Pinball</title>
+<link rel="stylesheet" href="./src/style.css"></head><body>
+<canvas id="c" width="600" height="900"></canvas>
+<button id="pauseBtn" aria-label="Duraklat">❚❚</button>
+<button id="fireBtn">FIRLAT</button>
+<div id="toast"></div>
+<div id="menu" class="ov"><div class="card">
+ <h1>KARANLIK KONAK</h1><p class="sub">Gotik Pinball</p>
+ <button id="playBtn" class="big">OYNA</button>
+ <div class="cpn"><input id="cpnIn" placeholder="Kupon kodu" autocomplete="off" autocapitalize="characters"><button id="cpnGo">UYGULA</button></div>
+ <div class="msg" id="cpnMsg"></div>
+ <p class="help">Sol/Sağ yarıya dokun = palet · Sağ alttan aşağı çek-bırak veya FIRLAT = top<br>Klavye: ← → / Z M = palet · Boşluk = fırlat · P = duraklat</p>
+</div></div>
+<div id="pause" class="ov hide"><div class="card">
+ <h2>DURAKLATILDI</h2>
+ <button id="resumeBtn" class="big">DEVAM</button>
+ <div class="cpn"><input id="cpnIn2" placeholder="Kupon kodu" autocomplete="off" autocapitalize="characters"><button id="cpnGo2">UYGULA</button></div>
+ <div class="msg" id="cpnMsg2"></div>
+ <button id="quitBtn">ANA MENÜ</button>
+</div></div>
+<div id="over" class="ov hide"><div class="card"><h2>GAME OVER</h2><p id="finalScore"></p><button id="againBtn" class="big">TEKRAR OYNA</button></div></div>
+<script type="module" src="./src/main.js"></script></body></html>

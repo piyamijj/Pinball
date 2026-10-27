@@ -1,0 +1,7 @@
+{
+  "appId": "com.polat.gotikkonakpinball",
+  "appName": "Gotik Konak Pinball",
+  "webDir": "dist",
+  "backgroundColor": "#0a0710",
+  "android": { "allowMixedContent": false }
+}
